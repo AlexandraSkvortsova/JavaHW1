@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Multitable {
+public class Zadanie5 {
     public static void main(String[] args)
     {
 

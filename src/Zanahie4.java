@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ClassTest {
+public class Zanahie4 {
     public static void main(String[] args)
     {
 
