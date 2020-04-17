@@ -10,29 +10,27 @@ public class Zadanie9 {
         String num = n.nextLine(); // считать с консоли
 
 
-        Scanner n2= new Scanner(System.in);
-        String num2 = n2.nextLine(); // считать с консоли
-        int x = Integer.parseInt(num, 10);
-        int y = Integer.parseInt(num2, 10);
 
-int mass[][]=new int[x][y];
+        int x = Integer.parseInt(num, 10);
+
+
+int mass[]=new int[x];
 // Вввод элементов массива - заполнение массива
 for (int i=0; i<x;i++)
-{ for (int j=0; j<y;j++)
-    {
-        System.out.println("введите элемент массива: mass["+i+"]["+j+"]");
+{
+
+        System.out.println("введите элемент массива: mass["+i+"] ");
         Scanner t= new Scanner(System.in);
         String f = t.nextLine(); // считать с консоли
         int number = Integer.parseInt(f, 10);
-       mass[i][j]=number ;
-    };
+       mass[i]=number;
+
 }
         for (int i=0; i<x;i++)
         {
-            for (int j = 0; j < y; j++)
-            {
-                System.out.println("элемент массива: mass["+i+"]["+j+"]"+"="+mass[i][j]*2);
-            }
+
+                System.out.println("элемент массива: mass["+i+"]"+"="+mass[i]*2);
+
         }
     }
     }
