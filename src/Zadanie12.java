@@ -11,16 +11,15 @@ public class Zadanie12 {
         Scanner n= new Scanner(System.in); //зададим строковую переменну- выделим память под нее
         String stroka = n.nextLine(); // считать с консоли
        // char[] massive=stroka.toCharArray(); // перевод строки в массив
-String[] partsMassive=stroka.split(" ");
+String[] partsMassive=stroka.split(" "); // разделение по словам (через пробел) изапись в массив
 
 
-       String resultMassive=String.format(partsMassive[0]);
+       String resultMassive=String.format(partsMassive[0]); // в новый строковый элемент пишу первый эдемент массива (он же всегда есть)
      for (int i=1; i<partsMassive.length; i++)
      {
-         resultMassive=String.format(resultMassive+partsMassive[i]);
+         resultMassive=String.format(resultMassive+partsMassive[i]); // перезаписываю каждый раз добавляя элемент массива
      }
 
-        //String resultMassive=String.format(partsMassive[i],partsMassive[i-1]);
         System.out.println(resultMassive);
 
 
