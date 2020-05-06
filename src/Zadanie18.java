@@ -10,7 +10,7 @@ public class Zadanie18 {
 
         String str;
         //Считаем файл и выведем текст
-        try (BufferedReader br = new BufferedReader(new FileReader("HomeWork16.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("HomeWork18.txt"))) {
             while ((str = br.readLine()) != null) {
                 System.out.println(str);
             }
@@ -23,7 +23,7 @@ public class Zadanie18 {
 
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Чтобы закончить ввод нажми enter и напиши: 'end'");
-        try (FileWriter fw=new FileWriter("HomeWork16.txt"))
+        try (FileWriter fw=new FileWriter("HomeWork18.txt"))
         {
             do
             { System.out.println(": ");
