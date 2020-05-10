@@ -9,11 +9,19 @@ public class Zadanie18 {
     public static void main(String[] args) {
 
         String str;
+        int k=0, k2=0; // считает строки
         //Считаем файл и выведем текст
         try (BufferedReader br = new BufferedReader(new FileReader("HomeWork18.txt"))) {
             while ((str = br.readLine()) != null) {
                 System.out.println(str);
+
+                k++;
+                /*if (str!=null)
+                {
+                  i  ;
+                }*/
             }
+            System.out.println("*В файле "+k+" строки");
         } catch (FileNotFoundException exc) {
             System.out.println("Ошибка вывода: " + exc);
 
@@ -22,17 +30,24 @@ public class Zadanie18 {
         }
 
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Чтобы закончить ввод нажми enter и напиши: 'end'");
+        System.out.println("Чтобы закончить ввод вам надо ввести такое же количество строк как в начальном файле");
         try (FileWriter fw=new FileWriter("HomeWork18.txt"))
         {
+            System.out.println(": ");
             do
-            { System.out.println(": ");
+            { //System.out.println(": ");
+                k2++;
+               // System.out.println("K2="+k2);
                 str=br.readLine();
-                if (str.compareTo("end")==0) break;
+               //if (str.compareTo("end")==0) break;
+
+               // if (k2>k) break;
                 str =str+"\r\n";
+                //k2++;
+
                 fw.write(str); // записываем в файл
             }
-            while (str.compareTo("end")!=0);
+            while (k2<k);
 
         } catch (IOException e) {
             System.out.println("Ошибка ввода ");
