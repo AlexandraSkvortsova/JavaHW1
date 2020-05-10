@@ -21,7 +21,7 @@ public class Zadanie18 {
                   i  ;
                 }*/
             }
-            System.out.println("*В файле "+k+" строки");
+            System.out.println("*В файле "+k+" строки(а)");
         } catch (FileNotFoundException exc) {
             System.out.println("Ошибка вывода: " + exc);
 
